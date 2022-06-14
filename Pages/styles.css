@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(44, 44, 44);
+  font-family: "Montserrat", sans-serif;
+}
+
+.head {
+  font-size: 0;
+  position: static;
+}
+
+.logo {
+  background-color: rgb(44, 44, 44);
+  font-weight: 900;
+  font-size: 25px;
+  color: #edf0f1;
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+
+.logo_hover {
+  background-color: rgb(44, 44, 44);
+  font-weight: 900;
+  font-size: 25px;
+  color: #edf0f1;
+  text-decoration: none;
+  letter-spacing: 4px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.logo_hover:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+  border-left: 2px solid #edf0f1;
+  animation: typing 0.8s steps(5) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+.nav_links {
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav_links li {
+  background-color: rgb(44, 44, 44);
+  list-style: none;
+}
+
+.nav_links a {
+  background-color: rgb(44, 44, 44);
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links a:hover {
+  color: grey;
+}
+
+.burger {
+  background-color: rgb(44, 44, 44);
+  display: none;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 2.5px;
+  background-color: #edf0f1;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav_links {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav_links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in;
+  }
+  .nav_links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav_active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
