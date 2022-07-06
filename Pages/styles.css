@@ -7,12 +7,58 @@
   background-color: black;
 }
 
+.content {
+  color: #edf0f1;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-icon {
+  font-size: 40px;
+  padding-right: 7px;
+}
+.content-body-text {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5vh;
+}
+
+.text-header {
+  padding-left: 25%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 10vh;
+}
+
+.text-text {
+  padding-left: 15%;
+  font-size: 30px;
+}
+
+.content-body-image {
+  width: 40%;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50%;
+  margin-top: 20vh;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgb(44, 44, 44);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -22,7 +68,6 @@ nav {
 }
 
 .logo {
-  background-color: rgb(44, 44, 44);
   font-weight: 900;
   font-size: 25px;
   color: #edf0f1;
@@ -31,7 +76,6 @@ nav {
 }
 
 .logo_hover {
-  background-color: rgb(44, 44, 44);
   font-weight: 900;
   font-size: 25px;
   color: #edf0f1;
@@ -48,7 +92,7 @@ nav {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(44, 44, 44);
+  background-color: black;
   border-left: 2px solid #edf0f1;
   animation: typing 0.8s steps(5) infinite;
 }
@@ -61,19 +105,16 @@ nav {
 }
 
 .nav_links {
-  background-color: rgb(44, 44, 44);
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
 
 .nav_links li {
-  background-color: rgb(44, 44, 44);
   list-style: none;
 }
 
 .nav_links a {
-  background-color: rgb(44, 44, 44);
   font-size: 16px;
   color: #edf0f1;
   text-decoration: none;
@@ -85,7 +126,6 @@ nav {
 }
 
 .burger {
-  background-color: rgb(44, 44, 44);
   display: none;
 }
 
@@ -116,7 +156,6 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: rgb(44, 44, 44);
     display: flex;
     flex-direction: column;
     align-items: center;
