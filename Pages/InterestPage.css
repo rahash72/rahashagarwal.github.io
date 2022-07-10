@@ -5,6 +5,19 @@
   background-color: black;
 }
 
+.page-header {
+  margin-top: 15px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #edf0f1;
+  height: 7vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .content {
   margin-top: 20px;
   color: #edf0f1;
@@ -63,6 +76,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+  }
+
+  .page-header {
+    font-size: 20px;
   }
 
   .content:nth-child(odd) {
