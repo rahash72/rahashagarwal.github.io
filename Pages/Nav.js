@@ -28,6 +28,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
   }
   
   .head {
@@ -116,9 +117,15 @@ nav {
   }
   
   @media screen and (max-width: 768px) {
-    body {
+
+    body , html   {
+      overflow-x: hidden !important;
+    }
+
+    nav{
       overflow-x: hidden;
     }
+
     .nav_links {
       position: absolute;
       right: 0px;
@@ -204,6 +211,5 @@ const logoChange = () => {
     hash.innerHTML = "#";
   });
 };
-
-logoChange();
 navSlide();
+logoChange();
