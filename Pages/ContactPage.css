@@ -6,6 +6,19 @@
   font-family: "Roboto", sans-serif;
 }
 
+.page-header {
+  margin-top: 15px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #edf0f1;
+  height: 7vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .socials {
   height: 100%;
   width: 50%;
