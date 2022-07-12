@@ -7,11 +7,11 @@ Nav.innerHTML = `
   <span class="logo_hover">#</span>
 </div>
 <ul class="nav_links">
-<li><a href="../index.html">Home</a></li>
   <li><a href="./AboutPage.html">About</a></li>
   <li><a href="./InterestPage.html">Interests</a></li>
   <li><a href="#">Work</a></li>
   <li><a href="./ContactPage.html">Contact</a></li>
+  <li><a href="https://drive.google.com/file/d/1ukJBqCQ5MMtxQT9W87kH_Df-oGEb4zcV/view?usp=sharing">Resume</a></li>
 </ul>
 <div class="burger">
   <div class="line1"></div>
