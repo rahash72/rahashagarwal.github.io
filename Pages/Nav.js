@@ -8,8 +8,6 @@ Nav.innerHTML = `
 </div>
 <ul class="nav_links">
   <li><a href="./AboutPage.html">About</a></li>
-  <li><a href="#">Interests</a></li>
-  <li><a href="#">Work</a></li>
   <li><a href="./ContactPage.html">Contact</a></li>
   <li><a href="https://drive.google.com/file/d/1ukJBqCQ5MMtxQT9W87kH_Df-oGEb4zcV/view?usp=sharing">Resume</a></li>
 </ul>
